@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="zabbix"><h1 id="zabbix" class="header"><a href="#zabbix">zabbix</a></h1></div>
+<ul>
+<li>
+<a href="grafana+zabbix.html">grafana+zabbix</a>
+
+<li>
+<span id="zabbix-搭建grafana+zabbix参考文档"></span><strong id="搭建grafana+zabbix参考文档">搭建grafana+zabbix参考文档</strong>
+
+</ul>
+<pre><code><a href="https://cloud.tencent.com/developer/article/1613445">https://cloud.tencent.com/developer/article/1613445</a>
+grafana 官网<a href="https://grafana.com/grafana/download">https://grafana.com/grafana/download</a>
+<span id="zabbix-安装grafana"></span><strong id="安装grafana">安装grafana</strong>
+yum install -y <a href="https://dl.grafana.com/enterprise/release/grafana-enterprise-10.3.1-1.x86_64.rpm">https://dl.grafana.com/enterprise/release/grafana-enterprise-10.3.1-1.x86_64.rpm</a>
+<span id="zabbix-启动"></span><strong id="启动">启动</strong>
+systemctl start grafana-server
+<span id="zabbix-开机自启动"></span><strong id="开机自启动">开机自启动</strong>
+systemctl enable grafana-server
+<span id="zabbix-访问"></span><strong id="访问">访问</strong>
+<a href="http://ip:3000/">http://ip:3000/</a>
+admin|admin
+<span id="zabbix-安装zabbix插件，重启grafana-server"></span><strong id="安装zabbix插件，重启grafana-server">安装zabbix插件，重启grafana-server</strong>
+grafana-cli plugins install alexanderzobnin-zabbix-app
+systemctl restart grafana-server
+注意：需要在grafana-server插件内enable zabbix插件
+导入数据源选择账户为zabbix的登录账户密码
+</pre></code>
+<ul>
+<li>
+<span id="zabbix-学习记录"></span><strong id="学习记录">学习记录</strong>
+
+</ul>
+<pre><code>
+利用zabbix+grafana模版，随便点点，多点几次已经点出想要的结果（2024年1月30日11:00:00）
+初步调整了几个item，查看了部分效果（2024年1月30日11:07:31）
+基本调整了几个item，效果还行（2024年1月30日17:04:55）
+图形展示实时数据、和趋势数据（2024年1月30日19:51:18）
+</code></pre>
+		
+<ul>
+<li>
+
+
+<li>
+<a href="grafana.html">grafana</a>
+
+<li>
+<span id="zabbix-说明"></span><strong id="说明">说明</strong>
+
+</ul>
+<pre><code><span id="zabbix-grafana 代理问题、学习grafana学习官网资料"></span><strong id="grafana 代理问题、学习grafana学习官网资料">grafana 代理问题、学习grafana学习官网资料</strong>
+<a href="https://grafana.com/docs/plugins/alexanderzobnin-zabbix-app/latest/（讲解zabbix+grafana）">https://grafana.com/docs/plugins/alexanderzobnin-zabbix-app/latest/（讲解zabbix+grafana）</a>
+2024年1月31日11:18:39
+<a href="https://grafana.com/docs/grafana/latest/administration/provisioning/#datasources（导入数据源参数配置说明">https://grafana.com/docs/grafana/latest/administration/provisioning/#datasources（导入数据源参数配置说明</a> 未完 ）
+2024年1月31日13:38:55
+<a href="https://cloud.tencent.com/developer/article/1807679（介绍grafana">https://cloud.tencent.com/developer/article/1807679（介绍grafana</a> 中文介绍 未完）
+</pre></code>
+<ul>
+<li>
+<a href="其他.html">其他</a>
+
+</ul>
+<pre><code>
+</pre></code>
+<ul>
+<li>
+<span id="zabbix-其他研究"></span><strong id="其他研究">其他研究</strong>
+
+</ul>
+<pre><code>
+99分位、95分位
+<a href="https://blog.csdn.net/spirit_8023/article/details/116982349（2024年2月21日13:52:41）">https://blog.csdn.net/spirit_8023/article/details/116982349（2024年2月21日13:52:41）</a>
+</code></pre>
+		
+<div id="网络"><h1 id="网络" class="header"><a href="#网络">网络</a></h1></div>
+<div id="docker"><h1 id="docker" class="header"><a href="#docker">docker</a></h1></div>
+<div id="天津过年计划"><h1 id="天津过年计划" class="header"><a href="#天津过年计划">天津过年计划</a></h1></div>
+<div id="手机拍摄"><h1 id="手机拍摄" class="header"><a href="#手机拍摄">手机拍摄</a></h1></div>
+<div id="Modsecurity应用防火墙"><h1 id="Modsecurity应用防火墙" class="header"><a href="#Modsecurity应用防火墙">Modsecurity应用防火墙</a></h1></div>
+<div id="HA"><h1 id="HA" class="header"><a href="#HA">HA</a></h1></div>
+<div id="git"><h1 id="git" class="header"><a href="#git">git</a></h1></div>
+<ol>
+<li>
+23232
+
+<li>
+2323 
+
+<ol>
+<li>
+223
+
+<li>
+2323
+
+</ol>
+</ol>
+<div id="git-github地址"><h2 id="github地址" class="header"><a href="#git-github地址">github地址</a></h2></div>
+
+<div id="Python"><h1 id="Python" class="header"><a href="#Python">Python</a></h1></div>
+<div id="Ubtuntu"><h1 id="Ubtuntu" class="header"><a href="#Ubtuntu">Ubtuntu</a></h1></div>
+<div id="vim"><h1 id="vim" class="header"><a href="#vim">vim</a></h1></div>
+<p>
+<span id="vim-编译安装vim"></span><strong id="编译安装vim">编译安装vim</strong>
+</p>
+
+<p>
+<a href="https://yianwillis.github.io/vimcdoc/doc/usr_90.html">https://yianwillis.github.io/vimcdoc/doc/usr_90.html</a>
+</p>
+
+<p>
+yum install ncurses ncurses-devel （解决依赖问题 2024年2月22日09:12:05）
+</p>
+
+<p>
+<span id="vim-vim插件说明"></span><strong id="vim插件说明">vim插件说明</strong>
+</p>
+
+<p>
+<a href="https://zhuanlan.zhihu.com/p/108697739">https://zhuanlan.zhihu.com/p/108697739</a>
+</p>
+
+<p>
+<span id="vim-vimwiki配置说明"></span><strong id="vimwiki配置说明">vimwiki配置说明</strong>
+</p>
+
+<p>
+git clone <a href="https://github.com/vimwiki/vimwiki.git">https://github.com/vimwiki/vimwiki.git</a> ~/.vim/pack/plugins/start/vimwiki
+</p>
+
+<ul>
+<li>
+to generate documentation i.e. ':h vimwiki'
+
+</ul>
+<p>
+vim -c 'helptags ~/.vim/pack/plugins/start/vimwiki/doc' -c quit
+</p>
+
+<p>
+~/.vimrc
+</p>
+
+<p>
+set nocompatible
+filetype plugin on
+syntax on
+let g:vimwiki_list = [{'path': '/root/wiki/',
+</p>
+<pre><code>\'path_html': '/root/html/',
+\}]
+</code></pre>
+<p>
+		2
+	1       
+</p>
+<pre><code>3	
+4
+5
+</code></pre>
+<p>
+let g:vimwiki_camel_case = 0
+</p>
+
+<div id="我的个人知识库"><h1 id="我的个人知识库" class="header"><a href="#我的个人知识库">我的个人知识库</a></h1></div>
+<ul>
+<li>
+<a href="任务列表.html">任务列表</a> -- <em>昨天</em> 就该完成的事！！！
+
+<li>
+<a href="Gutenberg 计划.html">Gutenberg 计划</a> -- 好书给我力量。
+
+<li>
+草稿 -- 临时记录一些东西。
+
+</ul>
+
+</body>
+</html>
