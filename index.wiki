@@ -90,6 +90,12 @@ let g:vimwiki_list = [{'path': '/root/wiki/',
 				    5
 let g:vimwiki_camel_case = 0
 
+*中文说明*
+     https://gitee.com/kitefano/vimwiki/（2024年2月22日19:43:30）
+*vimwiki参考*
+     https://github.com/ktmud/kwiki/blob/master/index.wiki
+     https://yzwdflyback.github.io/mywiki/index.html
+
 = 我的个人知识库 =
     * [[任务列表]] -- _昨天_ 就该完成的事！！！
     * [[Gutenberg 计划]] -- 好书给我力量。
